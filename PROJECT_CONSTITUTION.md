@@ -194,7 +194,29 @@ of identity theory, and is not required to be resolved in Phase 0.
 
 ## 5. Evolvable State
 
-_Not yet finalized._
+**Status: confirmed at the principle level; taxonomy deferred to Phase
+5.**
+
+Evolvable state is everything that is not (a) the identity invariant
+(Section 4: a real, verifiable, reactivatable causal chain) or (b) a
+product/safety invariant (Section 4). This includes, at least, beliefs,
+preferences, trust, behavioral tendencies, relationship state,
+self-description, and communication style — but the precise taxonomy,
+relationships between these categories, and mechanics of how each
+changes are intentionally deferred to Phase 5 (Self Formation), not
+decided here.
+
+Note: the raw content of the Episode Ledger is not itself an item of
+evolvable state — it is not a separate invariant either. It is entailed
+by the identity invariant: a causal chain cannot be "real" if its
+underlying evidence can be silently rewritten, so ledger immutability is
+part of what "real causal chain" already means, not an additional rule.
+
+The one principle Phase 0 does commit to: this evolvable space must be
+genuinely open in the system's actual design, not theoretically allowed
+but practically frozen — a design where beliefs/preferences/behavior
+never actually change in practice would constitute Failure Mode 5 (fixed
+persona bot) regardless of what the theory permits.
 
 ## 6. Legitimate Change
 
