@@ -36,15 +36,20 @@ has drifted from its actual goal.
 
 ## Current phase
 
-**Phase 0 — Project Constitution (substantially complete).**
+**Phase 1 — Experience Model (draft complete, pending acceptance).**
 
-`PROJECT_CONSTITUTION.md` now has confirmed answers for identity,
-continuity, invariants, evolvable state, legitimate change, identity
-drift, and evidence requirements. Falsification conditions are
-deliberately deferred until Phase 7 produces a working prototype to test
-against. One open question remains (whether a "deep forgetting" tier
-should exist as a legitimate identity discontinuity). Awaiting final
-full-document review before moving to Phase 1 (Experience Model).
+`PROJECT_CONSTITUTION.md` (Phase 0) is substantially complete — confirmed
+answers for identity, continuity, invariants, evolvable state, legitimate
+change, identity drift, and evidence requirements. Falsification
+conditions are deliberately deferred until Phase 7 produces a working
+prototype to test against. One open question remains there (whether a
+"deep forgetting" tier should exist as a legitimate identity
+discontinuity).
+
+`docs/episode-model.md` (Phase 1) is drafted in full — defines what
+counts as an Event/Episode/Conversation, episode boundaries, corrections,
+multi-modal events, and conflicting-evidence handling — pending the
+project owner's final review.
 
 ## Status
 
