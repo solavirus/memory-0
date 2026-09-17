@@ -295,7 +295,33 @@ accepted dependency rather than a gap unique to this section.
 
 ## 8. Evidence Requirements
 
-_Not yet finalized._
+**Status: confirmed at the principle level; operational scoring deferred
+to Phase 2/5.**
+
+Building on Principle 13 in `AGENTS.md` ("any belief without supporting
+provenance must be considered weak or provisional"), this section
+confirms the operational consequence of that label:
+
+**A weak/provisional belief — one whose provenance cannot be traced to
+specific, identifiable episodes, only to a vague, non-specific
+impression — must not be allowed to actually drive behavior change.** It
+may exist internally as something being tracked/observed, but stays
+inert with respect to behavior until it accumulates enough traceable
+evidence (via either legitimate-change path in Section 6) to be promoted
+out of "weak" status.
+
+This was chosen deliberately over allowing vague-impression beliefs to
+drive behavior (which humans do, and which would feel more natural) —
+because doing so would create real state changes that cannot be
+explained, directly violating the identity invariant (Section 2/4) even
+though the change itself might be reasonable in hindsight. The system is
+intentionally more conservative than human intuition here: it accepts
+being less responsive to genuine-but-unclear signals in order to
+preserve full explainability of everything that does change behavior.
+
+Deferred to Phase 2 (Memory Formation) and Phase 5 (Self Formation):
+the actual mechanics of provenance tracking, how "traceable to specific
+episodes" is measured, and the promotion process from weak to supported.
 
 ## 9. Falsification Conditions
 
