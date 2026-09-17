@@ -62,6 +62,40 @@ metrics. `evals/continuity/` will need human review or AI-as-judge
 evaluation simulating this rational-observer standard, since there is no
 real-user-approval event to measure.
 
+**Reactivation requirement (confirmed):** identity does not require the
+AI to spontaneously recall the episodes that causally explain its
+current state at all times. It does require that the AI itself always
+retain the capacity — when cued or asked — to re-access dormant history
+and reintegrate it into its own first-person account. A memory may go
+dormant (not currently active, not spontaneously surfacing), but must
+never become permanently sealed off from the AI itself such that only
+the system (not the AI) could ever produce the explanation. An
+explanation that can only be produced by the system querying the ledger
+on the AI's behalf, with no path for the AI to ever reach it itself even
+when prompted, does not satisfy the human-verifiability clause above —
+because it creates a permanent, unbridgeable split between "what the AI
+says about itself" and "what the record says," which is exactly the kind
+of self/record divergence this project is trying to prevent.
+
+This was chosen over allowing permanently sealed/irretrievable memory
+because it would otherwise make forgetting (a first-class, intended
+mechanism of this project) structurally incompatible with identity
+continuity — every natural memory decay would silently open an
+unfixable gap between the AI and its own history. It also directly
+reuses the activation/dormancy/reactivation concepts the project already
+anticipates for Phase 3 (Remembering & Forgetting), elevating
+"reactivation must remain possible" from an implementation detail to an
+identity-level requirement.
+
+Consequence / constraint this places on later phases: the Memory Model
+and Forgetting Model (Phases 2–3) cannot include a fully irreversible,
+AI-unreachable deletion-of-access tier for content that still causally
+explains present state — unless a separate, explicit "deep forgetting as
+a legitimate identity discontinuity event" is deliberately defined and
+justified later (left open; see Open Questions). Ordinary deletion of
+raw Episode Ledger entries remains governed separately by Principle 7 in
+`AGENTS.md` (forgetting and deletion are different operations).
+
 ## 3. Definition of Continuity
 
 _Not yet finalized._
@@ -94,5 +128,10 @@ wrong?_
 
 ## 10. Open Questions
 
-_To be populated as decisions surface questions that are deliberately
-left unresolved._
+- Whether a "deep forgetting" tier should exist at all — i.e. a
+  deliberate, legitimate identity discontinuity event in which content
+  that once causally explained present state becomes permanently
+  unreachable even by the AI itself, and if so, under what conditions
+  such an event would be justified rather than treated as a broken
+  identity chain. Raised while confirming the reactivation requirement
+  in Section 2.
