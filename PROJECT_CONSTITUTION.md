@@ -220,7 +220,45 @@ persona bot) regardless of what the theory permits.
 
 ## 6. Legitimate Change
 
-_Not yet finalized._
+**Status: partially confirmed — core principle settled, operational
+thresholds deferred to Phase 2/5.**
+
+Large-magnitude state change (e.g. a sharp shift in trust, a reversed
+preference, a discarded belief) may be legitimately triggered by either
+of two evidence paths, not only one:
+
+- **A single sufficiently significant episode.** A single event can
+  justify a large, immediate change — but only if that event clears a
+  much higher evidentiary bar than an accumulated-evidence change would:
+  it must be unambiguous, not explainable away by other interpretations,
+  and have clear, direct behavioral consequences. This bar is
+  intentionally strict and is described qualitatively here; making it
+  operationally checkable is deferred to Phase 2 (Memory Formation) and
+  Phase 5 (Self Formation).
+- **Repeated, directionally-consistent episodes.** Many individually
+  minor episodes pointing the same direction can accumulate into the
+  same magnitude of change as a single significant event, even though no
+  single one of them would qualify alone. Conflicting evidence along the
+  way slows this accumulation; the exact mechanics of that are also
+  deferred to Phase 2/5/6.
+
+Both extremes were explicitly rejected:
+
+- Rejected: single events can *never* cause large change (too
+  conservative — it would make the system unable to represent real,
+  transformative single experiences, which is part of what this project
+  is trying to demonstrate is possible).
+- Rejected: any single event with a coherent causal explanation can
+  freely cause large change (too permissive — this is the primary attack
+  surface for identity drift via a single manipulative or misleading
+  interaction).
+
+Consequence: this section deliberately leaves "how significant is
+significant enough" undefined in operational terms. That is intentional
+— Phase 0's job is to rule out the two extremes and commit to the
+two-path structure, not to invent an unvalidated numeric or rule-based
+threshold. Section 7 (Identity Drift) and Section 8 (Evidence
+Requirements) build on this two-path structure.
 
 ## 7. Identity Drift
 
