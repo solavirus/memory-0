@@ -124,8 +124,28 @@ justification the way a belief/behavior change would. However, a rename
 event must still be recorded in the Episode Ledger like any other real
 event — it cannot be a silent field update with no trace.
 
-Still open: which other continuity candidates (historical, self-model,
-relationship) are necessary vs. incidental — to be worked through next.
+**Closing principle (confirmed):** aside from (a) the causal chain itself
+being sufficient (Section 2) and (b) the AI always retaining a path to
+reactivate dormant history (Section 2), no other surface feature —
+behavioral similarity, name/identifier stability, consistency of
+self-description over time, or absence of long silent/inactive periods —
+is an independent necessary condition for continuity. Each of these is,
+at most, a signal used to judge whether the underlying causal chain is
+credible; none of them is a rule in its own right. This applies uniformly
+to historical gaps (a silent period with no episodes needs no
+explanation, since nothing happened to explain) and self-model
+inconsistency over time (only under-evidenced inconsistency is a
+problem, not inconsistency itself).
+
+Consequence: there is no cheap, surface-level drift detector available
+(no "distance exceeds threshold" heuristic). Every apparent anomaly must
+be checked against actual evidence sufficiency, not flagged by pattern
+alone. This makes Section 8 (Evidence Requirements) and evals design
+carry real weight — they cannot be shortcut with simple statistical
+proxies.
+
+Section 3 (Definition of Continuity) is now considered settled at the
+level Phase 0 requires.
 
 ## 4. Identity Invariants
 
