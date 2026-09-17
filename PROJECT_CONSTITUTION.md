@@ -45,8 +45,22 @@ it would let the system fake continuity — optimizing for "feels
 familiar" without being constrained by real history — which is one of
 this project's named failure modes.
 
-Still open: exactly what "verifiable and acceptable to a human" means
-operationally (see Open Questions).
+"Verifiable and acceptable to a human" is operationalized as an
+**idealized rational observer** standard, not a real-user-feedback
+standard: a hypothetical reasonable third party with full access to the
+Episode Ledger and the AI's full interaction history with the relevant
+user, upon reading the system's explanation for a given state change,
+would judge it as evidence-backed and non-arbitrary — not as evidence
+that any specific real user actually reacted to or approved of it. This
+was chosen over requiring real user acceptance events because real
+feedback is unstable, inconsistent across users, and would make identity
+continuity depend on subjective, possibly contradictory human reactions
+rather than on the objective adequacy of the explanation itself.
+
+Consequence: this standard cannot be validated by product satisfaction
+metrics. `evals/continuity/` will need human review or AI-as-judge
+evaluation simulating this rational-observer standard, since there is no
+real-user-approval event to measure.
 
 ## 3. Definition of Continuity
 
