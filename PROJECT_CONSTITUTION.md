@@ -98,7 +98,28 @@ raw Episode Ledger entries remains governed separately by Principle 7 in
 
 ## 3. Definition of Continuity
 
-_Not yet finalized._
+**Status: partially confirmed.**
+
+Behavioral similarity is **not** an independent necessary condition for
+continuity. There is no hard cap on how much observable behavior may
+differ between T1 and T2. A large behavioral change with a fully
+sufficient causal chain (per Section 2) is still continuous; a small
+behavioral change with an insufficient causal chain is not.
+
+This was confirmed to avoid smuggling back in the "identity = trait/
+behavior stability" framing that Section 2 explicitly rejected, and
+because artificially capping behavioral change would contradict the
+project's own thesis (change can be large; it must be explicable).
+
+Consequence: "how much evidence justifies how much change" becomes the
+real question, deferred to Section 6 (Legitimate Change). Behavioral
+distance is not used as a standalone drift detector; large,
+under-evidenced change is treated as a symptom to investigate via the
+evidence-sufficiency question, not a rule violation in itself.
+
+Still open: which other continuity candidates (historical, self-model,
+relationship, name/identifier) are necessary vs. incidental — to be
+worked through next.
 
 ## 4. Identity Invariants
 
