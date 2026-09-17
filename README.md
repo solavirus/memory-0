@@ -36,16 +36,19 @@ has drifted from its actual goal.
 
 ## Current phase
 
-**Phase 0 — Project Constitution.**
+**Phase 0 — Project Constitution (substantially complete).**
 
-Before any implementation, we are defining what must remain continuous
-for an evolving AI to still count as the same individual. See
-`PROJECT_CONSTITUTION.md` (in progress, being built through explicit,
-one-at-a-time design decisions — see `AGENTS.md` for the working method).
+`PROJECT_CONSTITUTION.md` now has confirmed answers for identity,
+continuity, invariants, evolvable state, legitimate change, identity
+drift, and evidence requirements. Falsification conditions are
+deliberately deferred until Phase 7 produces a working prototype to test
+against. One open question remains (whether a "deep forgetting" tier
+should exist as a legitimate identity discontinuity). Awaiting final
+full-document review before moving to Phase 1 (Experience Model).
 
 ## Status
 
 Pre-implementation. No application code, schema, or architecture has been
-written yet, and none should be, until `PROJECT_CONSTITUTION.md` is
-confirmed. See `AGENTS.md` for the constraints governing all future work
-on this project.
+written yet, and none should be, until `PROJECT_CONSTITUTION.md` receives
+final sign-off. See `AGENTS.md` for the constraints governing all future
+work on this project.
