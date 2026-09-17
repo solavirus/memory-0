@@ -21,8 +21,32 @@ _Not yet finalized._
 
 ## 2. Definition of Identity
 
-_Not yet finalized. Central question: what must remain continuous for an
-evolving AI to still count as the same individual?_
+**Status: partially confirmed — base clause settled, operationalization
+of "user-verifiable" still open (see Open Questions).**
+
+Identity is grounded in causal traceability from the Episode Ledger, not
+in trait/personality/behavioral stability — but causal traceability alone
+is not sufficient. A causal chain that exists only as an internal system
+record, which no human could ever inspect or make sense of, does not
+count as identity-preserving.
+
+> Agent A at time T2 is "the same individual" as Agent A at time T1 if
+> and only if (a) every observable difference between A(T1) and A(T2)
+> can be attributed to a documented, ordered sequence of real episodes
+> between T1 and T2, AND (b) that attribution is expressible as an
+> explanation a human could actually inspect, verify, and accept as
+> non-arbitrary — not merely a fact the system could theoretically
+> reconstruct from logs.
+
+Explicitly rejected: full ontological deferral to user experience (i.e.
+"identity is nothing but what the user feels/perceives," independent of
+whether a real causal record exists). That framing was rejected because
+it would let the system fake continuity — optimizing for "feels
+familiar" without being constrained by real history — which is one of
+this project's named failure modes.
+
+Still open: exactly what "verifiable and acceptable to a human" means
+operationally (see Open Questions).
 
 ## 3. Definition of Continuity
 
