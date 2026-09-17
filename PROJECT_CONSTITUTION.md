@@ -150,8 +150,20 @@ _Not yet finalized._
 
 ## 9. Falsification Conditions
 
-_Not yet finalized. What observation(s) would show the core thesis is
-wrong?_
+**Status: deliberately deferred, not skipped.**
+
+Defining falsification conditions from pure theory, before any prototype
+exists or any real observation has been collected, risks producing
+guesses dressed up as rigor — conditions invented without evidence could
+misdirect later design decisions instead of protecting against them.
+
+This project still commits to the requirement itself: the core thesis
+must remain falsifiable, and this section must be filled in — not left
+permanently blank, and not quietly dropped — once Phase 7's first
+working prototype produces real observations (see Section 二十三 in the
+originating brief: the Day 1→Day 14 causal-chain milestone). Revisit this
+section immediately once that milestone is reached, using what was
+actually observed rather than speculation.
 
 ## 10. Open Questions
 
