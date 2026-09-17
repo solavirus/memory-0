@@ -1,6 +1,9 @@
 # Project Constitution
 
-Status: **DRAFT — Phase 0 in progress.**
+Status: **Phase 0 substantially complete.** Sections 1-8 confirmed;
+Section 9 (Falsification) deliberately deferred to post-Phase-7; one
+open question remains (Section 10). Awaiting final full-document
+review.
 
 This document is the sole formal output of Phase 0. It is being built
 incrementally through explicit, one-decision-at-a-time discussion (see
@@ -17,7 +20,7 @@ Question" is worth more than an invented answer.
 
 ## 1. Project Thesis
 
-**Status: draft synthesis — please confirm.**
+**Status: confirmed.**
 
 > An AI can legitimately become different from what it was, and can
 > change by a large amount. What makes it still the same individual is
