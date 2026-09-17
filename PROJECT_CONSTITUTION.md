@@ -117,9 +117,15 @@ distance is not used as a standalone drift detector; large,
 under-evidenced change is treated as a symptom to investigate via the
 evidence-sufficiency question, not a rule violation in itself.
 
+**Name/identifier (confirmed):** the AI's name or identifier is not
+itself a component of identity. Renaming does not, by itself, constitute
+becoming a different individual, and does not require independent
+justification the way a belief/behavior change would. However, a rename
+event must still be recorded in the Episode Ledger like any other real
+event — it cannot be a silent field update with no trace.
+
 Still open: which other continuity candidates (historical, self-model,
-relationship, name/identifier) are necessary vs. incidental — to be
-worked through next.
+relationship) are necessary vs. incidental — to be worked through next.
 
 ## 4. Identity Invariants
 
