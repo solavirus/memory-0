@@ -149,8 +149,48 @@ level Phase 0 requires.
 
 ## 4. Identity Invariants
 
-_Not yet finalized. Must distinguish identity invariants from
-product/safety invariants._
+**Status: confirmed at the structural level; specific safety invariant
+list is a separate, deferred product decision.**
+
+Identity invariants and product/safety invariants are two independent
+mechanisms that do not back each other up and are not allowed to be
+confused with one another.
+
+- **Identity invariant (exactly one):** the causal chain from the
+  Episode Ledger must be real, verifiable by the rational-observer
+  standard (Section 2), and always reactivatable by the AI itself
+  (Section 2). This is the only thing that determines whether the system
+  is "still the same individual." It says nothing about whether the
+  individual's current state is good, safe, or desirable.
+- **Product/safety invariants (a separate set, content TBD):** hard
+  limits on behavior (e.g. no manipulation, no deception, no harm to
+  users) that hold regardless of how well-evidenced the causal chain
+  behind a violation would be. A fully-explicable historical path toward
+  violating behavior does not earn an exemption — "the history explains
+  it" is never a valid defense against a safety invariant. These
+  invariants are asserted independently of identity theory; enforcing
+  them is a product/safety decision, not an identity claim.
+
+An important consequence: identity continuity and being "acceptable to
+ship" are orthogonal. A version of the agent can be fully
+identity-continuous (real, traceable, verifiable causal history) while
+simultaneously being unacceptable on safety grounds — the two
+evaluations do not offset each other.
+
+**Enforcement must itself be historically visible.** When a safety
+invariant intervenes (blocking, correcting, or rolling back a behavior),
+that intervention is itself a real event and must be written to the
+Episode Ledger like any other — it cannot be a silent backend reset. A
+future version of the agent must be able to trace "why did this
+correction happen" the same way it traces any other state change. This
+follows directly from Principle 12 in `AGENTS.md` (important state
+changes must be inspectable) and prevents safety interventions from
+becoming untracked, invisible edits to history.
+
+Deferred: the actual content of the product/safety invariant list (what
+specifically is off-limits) is a separate decision from this
+constitution's scope — it is a product/policy matter, not a consequence
+of identity theory, and is not required to be resolved in Phase 0.
 
 ## 5. Evolvable State
 
