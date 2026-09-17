@@ -36,24 +36,37 @@ has drifted from its actual goal.
 
 ## Current phase
 
-**Phase 1 — Experience Model (draft complete, pending acceptance).**
+**Skipped ahead to prove the core milestone; Phases 2–6 theory docs not
+yet written.**
 
-`PROJECT_CONSTITUTION.md` (Phase 0) is substantially complete — confirmed
-answers for identity, continuity, invariants, evolvable state, legitimate
-change, identity drift, and evidence requirements. Falsification
-conditions are deliberately deferred until Phase 7 produces a working
-prototype to test against. One open question remains there (whether a
-"deep forgetting" tier should exist as a legitimate identity
-discontinuity).
-
-`docs/episode-model.md` (Phase 1) is drafted in full — defines what
-counts as an Event/Episode/Conversation, episode boundaries, corrections,
-multi-modal events, and conflicting-evidence handling — pending the
-project owner's final review.
+- `PROJECT_CONSTITUTION.md` (Phase 0): substantially complete — confirmed
+  answers for identity, continuity, invariants, evolvable state,
+  legitimate change, identity drift, and evidence requirements.
+  Falsification conditions are deliberately deferred until a prototype
+  produces real observations to test against. One open question remains
+  (whether a "deep forgetting" tier should exist as a legitimate identity
+  discontinuity).
+- `docs/episode-model.md` (Phase 1): drafted in full.
+- Phase 2 (Memory Formation), Phase 3 (Remembering & Forgetting), Phase 4
+  (Interpretation), Phase 5 (Self Formation), and Phase 6 (Relationship)
+  have **not** been formally written up — at the project owner's explicit
+  direction, work jumped to proving the milestone below before those
+  theory docs exist. Treat `apps/prototype/` as a working sketch to be
+  reconciled with those docs later, not as having already answered their
+  questions.
+- `apps/prototype/`: a minimal, runnable, zero-dependency proof of the
+  project's first real milestone — a belief that weakens because of two
+  real, conflicting episodes, causes a real behavior change, and can
+  explain why when asked, by walking real stored provenance (not a canned
+  answer). See `apps/prototype/README.md` for how to run it and for
+  explicit disclaimers about what it does and doesn't prove.
 
 ## Status
 
-Pre-implementation. No application code, schema, or architecture has been
-written yet, and none should be, until `PROJECT_CONSTITUTION.md` receives
-final sign-off. See `AGENTS.md` for the constraints governing all future
-work on this project.
+Early prototype stage. One working vertical slice exists
+(`apps/prototype/`) proving the core causal-chain claim end-to-end; it is
+not the product described in the rest of the project brief (no real
+conversational AI, no `/people` or `/talk`, no polished UI, no
+production storage). See `AGENTS.md` for the constraints governing all
+work on this project, and `apps/prototype/README.md` for what is and
+isn't validated by the prototype.

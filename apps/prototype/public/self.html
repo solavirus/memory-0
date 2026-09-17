@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>Self — Persistent Self Prototype</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<nav>
+  <a href="/">Today</a>
+  <a href="/history.html">History</a>
+  <a href="/self.html">Self</a>
+  <a href="/debug.html">Debug</a>
+</nav>
+
+<h1>它现在如何理解自己</h1>
+<div id="self"></div>
+
+<script src="/nav.js"></script>
+<script>
+async function load() {
+  const res = await fetch("/api/self");
+  const data = await res.json();
+  document.getElementById("self").innerHTML = `
+    <p class="muted">Self Model 版本 #${data.version}</p>
+    <h2>信念（Beliefs）</h2>
+    ${data.beliefs
+      .map(
+        (b) => `<div class="card">
+          <strong>${b.key}</strong>
+          <div>${b.statement}</div>
+          <div class="strength-bar"><div class="strength-fill" style="width:${b.strength * 100}%"></div></div>
+          <div class="muted">强度 ${b.strength} · 最近更新 ${b.updated_at.slice(0,10)}</div>
+        </div>`
+      )
+      .join("")}
+    <h2>行为倾向（Behavioral Tendencies）</h2>
+    ${data.tendencies
+      .map(
+        (t) => `<div class="card">
+          <strong>${t.key}</strong>: ${t.value}
+          <div class="muted">最近更新 ${t.updated_at.slice(0,10)}</div>
+        </div>`
+      )
+      .join("")}
+  `;
+}
+load();
+</script>
+</body>
+</html>

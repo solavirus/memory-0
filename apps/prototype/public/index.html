@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>Today — Persistent Self Prototype</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<nav>
+  <a href="/">Today</a>
+  <a href="/history.html">History</a>
+  <a href="/self.html">Self</a>
+  <a href="/debug.html">Debug</a>
+</nav>
+
+<h1>今天的它</h1>
+<p class="muted">
+  这是 Persistent Artificial Self 的最小可运行原型，只演示一条真实的因果链：
+  一个信念因为两次真实经历而改变，进而导致行为改变，并且这一切可以被追溯和解释。
+  这不是最终产品，产品页面结构、UI 打磨都还没做。
+</p>
+
+<h2>当前自我状态摘要</h2>
+<div id="summary" class="card">加载中…</div>
+
+<h2>问它一个问题</h2>
+<p class="muted">试试问："为什么你最近老是提醒我确认事情？"</p>
+<div class="chat-row">
+  <input id="question" type="text" placeholder="问点什么…" />
+  <button id="ask">问</button>
+</div>
+<div id="answer"></div>
+
+<script src="/nav.js"></script>
+<script>
+async function loadSummary() {
+  const res = await fetch("/api/self");
+  const data = await res.json();
+  const el = document.getElementById("summary");
+  el.innerHTML = `
+    <div class="muted">Self Model 版本 #${data.version}</div>
+    ${data.beliefs
+      .map(
+        (b) => `<div style="margin-top:8px">
+          <strong>${b.key}</strong>: ${b.statement}
+          <div class="strength-bar"><div class="strength-fill" style="width:${b.strength * 100}%"></div></div>
+          <span class="muted">强度 ${b.strength}</span>
+        </div>`
+      )
+      .join("")}
+    ${data.tendencies
+      .map((t) => `<div style="margin-top:8px"><span class="tag">${t.key}</span> ${t.value}</div>`)
+      .join("")}
+  `;
+}
+loadSummary();
+
+document.getElementById("ask").addEventListener("click", async () => {
+  const question = document.getElementById("question").value;
+  const res = await fetch("/api/ask", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question }),
+  });
+  const data = await res.json();
+  document.getElementById("answer").innerHTML = `<pre>${data.answer}</pre>`;
+});
+</script>
+</body>
+</html>

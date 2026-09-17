@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>History — Persistent Self Prototype</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<nav>
+  <a href="/">Today</a>
+  <a href="/history.html">History</a>
+  <a href="/self.html">Self</a>
+  <a href="/debug.html">Debug</a>
+</nav>
+
+<h1>它是怎么变成现在这样的</h1>
+<p class="muted">这是最重要的一个页面：真实经历的时间线，以及每一次重要状态变化背后的证据。</p>
+
+<h2>经历时间线（Episodes）</h2>
+<div id="episodes"></div>
+
+<h2>重要状态变化（Change Events）</h2>
+<div id="changes"></div>
+
+<script src="/nav.js"></script>
+<script>
+async function load() {
+  const res = await fetch("/api/history");
+  const data = await res.json();
+
+  document.getElementById("episodes").innerHTML = data.episodes
+    .map(
+      (ep) => `<div class="card">
+        <div><strong>#${ep.id} ${ep.topic}</strong> <span class="muted">${ep.ts.slice(0,10)}</span></div>
+        <div class="muted">${ep.summary}</div>
+        ${ep.events.map((e) => `<div class="chain-line">· [${e.actor}] ${e.payload}</div>`).join("")}
+      </div>`
+    )
+    .join("");
+
+  document.getElementById("changes").innerHTML = data.changeEvents
+    .map(
+      (ce) => `<div class="card">
+        <div><span class="tag">${ce.type}</span><strong>${ce.subject_key}</strong> <span class="muted">${ce.ts.slice(0,10)}</span></div>
+        <div>${ce.description}</div>
+        <div class="muted">路径: ${ce.path} · 证据来源: ${JSON.stringify(ce.provenance)}</div>
+        <div><a href="#" onclick="explain('${ce.subject_key}');return false;">为什么？</a></div>
+      </div>`
+    )
+    .join("");
+}
+load();
+
+async function explain(key) {
+  const res = await fetch("/api/explain?key=" + encodeURIComponent(key));
+  const data = await res.json();
+  alert(data.lines ? data.lines.join("\n") : JSON.stringify(data));
+}
+</script>
+</body>
+</html>
