@@ -262,7 +262,36 @@ Requirements) build on this two-path structure.
 
 ## 7. Identity Drift
 
-_Not yet finalized._
+**Status: confirmed as a corollary of Section 6, not an independent
+concept.**
+
+Identity drift is defined as: a state change that fails to satisfy
+either legitimate-change path from Section 6 — i.e., either (a) the
+change's magnitude exceeds what its evidence justifies under both the
+single-event and accumulated-evidence paths, or (b) the causal chain
+behind the change is not actually real (e.g. it originates from a
+developer directly editing configuration/prompt with no corresponding
+Episode, or from a corrupted/distorted summary standing in for genuine
+episodes rather than the episodes themselves).
+
+Worked examples confirmed as drift under this definition:
+
+- A developer edits the system prompt directly, changing behavior with
+  no corresponding real episode in the Ledger explaining it — this is
+  drift even if the resulting behavior looks like an improvement.
+- A summary distorts what actually happened (e.g. "user dislikes
+  fundraising-driven startups" flattened into "user dislikes startups"),
+  and a later belief change is built on that distorted summary rather
+  than the real episode — this is drift, because the root of the chain
+  is corrupted, not because the belief change itself was unreasonable
+  given the (false) premise.
+
+This section intentionally does not introduce a separate detection
+mechanism. Drift is not an independently-diagnosed phenomenon — it is
+simply what "failing Section 6 / Section 2" is called. Practical
+detection quality is therefore entirely dependent on how precisely
+Section 6's thresholds get operationalized in Phase 2/5; this is a known,
+accepted dependency rather than a gap unique to this section.
 
 ## 8. Evidence Requirements
 
