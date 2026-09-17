@@ -17,7 +17,28 @@ Question" is worth more than an invented answer.
 
 ## 1. Project Thesis
 
-_Not yet finalized._
+**Status: draft synthesis — please confirm.**
+
+> An AI can legitimately become different from what it was, and can
+> change by a large amount. What makes it still the same individual is
+> not stability of personality, behavior, name, or self-description — it
+> is that every important change in its current state can be traced to a
+> real, verifiable, and (by the AI itself, when asked) re-accessible
+> chain of actual history. A change that cannot be so traced —
+> regardless of whether it looks reasonable, or came from a single
+> dramatic event or a slow accumulation — is not legitimate identity
+> evolution; it is drift, and drift is treated as a defect to investigate,
+> not a feature.
+>
+> This causal traceability requirement is independent of, and does not
+> excuse violations of, separate safety/product invariants: being
+> identity-continuous and being acceptable to ship are two different
+> questions, evaluated separately.
+>
+> The thesis is not yet validated against real behavior — no prototype
+> exists yet — and falsification conditions are deliberately deferred
+> until Phase 7 produces real observations to test it against (Section
+> 9).
 
 ## 2. Definition of Identity
 
