@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1024" role="img" aria-label="Blue hat orange star character base reference">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- hat -->
+    <path d="M250 330 L385 105 L520 330 Z" stroke="#149BFF" stroke-width="28"/>
+    <path d="M238 332 Q385 318 532 333" stroke="#149BFF" stroke-width="24"/>
+    <!-- star -->
+    <path d="M385 190 L402 230 L446 233 L412 260 L423 303 L385 280 L347 303 L358 260 L324 233 L368 230 Z" fill="#FF6A00" stroke="#FF6A00" stroke-width="6"/>
+    <!-- head -->
+    <circle cx="385" cy="410" r="92" fill="#FFFFFF" stroke="#111111" stroke-width="22"/>
+    <!-- body -->
+    <path d="M385 505 L385 728" stroke="#111111" stroke-width="34"/>
+    <!-- arms -->
+    <path d="M385 565 L300 650" stroke="#111111" stroke-width="28"/>
+    <path d="M385 565 L470 650" stroke="#111111" stroke-width="28"/>
+    <!-- legs -->
+    <path d="M385 724 L322 900" stroke="#111111" stroke-width="32"/>
+    <path d="M385 724 L448 900" stroke="#111111" stroke-width="32"/>
+  </g>
+</svg>
